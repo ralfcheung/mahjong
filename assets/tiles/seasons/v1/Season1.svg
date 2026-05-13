@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="800" viewBox="0 0 600 800">
+  <!-- Season 1: Spring (春) -->
+  <!-- Number in top-left corner -->
+  <text x="40" y="90" font-family="'Noto Serif SC', 'SimSun', serif" font-size="80" font-weight="bold" fill="#2E7D32" text-anchor="start">1</text>
+  <!-- Label beneath number -->
+  <text x="40" y="140" font-family="'Noto Serif SC', 'SimSun', serif" font-size="40" font-weight="bold" fill="#2E7D32" text-anchor="start">季</text>
+  <!-- Main character centered -->
+  <text x="300" y="450" font-family="'Noto Serif SC', 'SimSun', serif" font-size="400" font-weight="bold" fill="#2E7D32" text-anchor="middle" dominant-baseline="central">春</text>
+</svg>

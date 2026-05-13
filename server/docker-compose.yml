@@ -1,0 +1,29 @@
+services:
+  redis:
+    image: redis:8.0.5
+    container_name: mj_redis_cache
+    ports:
+      - "6379:6379"
+#    command: ["redis-server", "--requirepass", "my_secure_password"]
+    networks:
+      - mj_network
+  db:
+    image: pgvector/pgvector:0.8.1-pg17
+    container_name: postgres_mj_db
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - mj_postgres_data:/var/lib/postgresql/data
+    networks:
+        - mj_network
+
+volumes:
+  mj_postgres_data:
+
+networks:
+  mj_network:
+    driver: bridge

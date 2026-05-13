@@ -41,8 +41,24 @@
 
 # Build directories
 build/
+third_party/
+.DS_Store
+.idea/
+.claude/
+.env
+__pycache__/
+*.pyc
+server/mj_server/
+server/.venv
+mcp/.venv/
 Build/
 build-*/
+ios/build-*/
+tools/TilePreview/.build/
+
+# Local/generated model artifacts
+assets/model/
+assets/model_backup/
 
 # CMake generated files
 CMakeFiles/
